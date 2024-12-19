@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "android:local:dev": "eas build --profile development --platform android --local && expo start"
   },
   "jest": {
     "preset": "jest-expo"
@@ -21,6 +21,7 @@
     "expo": "~52.0.20",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.3",
+    "expo-dev-client": "~5.0.6",
     "expo-font": "~13.0.2",
     "expo-haptics": "~14.0.0",
     "expo-linking": "~7.0.3",
@@ -29,6 +30,7 @@
     "expo-status-bar": "~2.0.0",
     "expo-symbols": "~0.2.0",
     "expo-system-ui": "~4.0.6",
+    "expo-updates": "~0.26.10",
     "expo-web-browser": "~14.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
